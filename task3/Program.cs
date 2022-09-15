@@ -8,11 +8,10 @@ void PrintArray (int[,,] matr)
         {
             for(int z = 0;z < matr.GetLength(2);z++)
             {
-                Console.Write($"{matr[i,j,z]} ");
-                
+                Console.WriteLine($"{matr[i,j,z]} = {i},{j},{z}");
             }
         }
-        Console.WriteLine();
+        Console.WriteLine(); // Разделение строк массива
     }
 }
 void FillArray(int[,,] matr)
